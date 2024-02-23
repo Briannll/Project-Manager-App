@@ -1,4 +1,5 @@
 import Button from "../UI/Button";
+import Tasks from "../sidebar/Tasks";
 export default function SelectedProject({ project, onDelete }) {
   const formattedDate = new Date(project.dueDate).toLocaleDateString("LT");
 
@@ -16,7 +17,7 @@ export default function SelectedProject({ project, onDelete }) {
           {project.description}
         </p>
       </header>
-      TASKS
+      <Tasks />
     </div>
   );
 }
